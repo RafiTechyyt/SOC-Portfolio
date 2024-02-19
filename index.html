@@ -15,7 +15,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammed Rafi</title>
+    <title>Rafi's Portfolio</title>
     <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 
@@ -60,12 +60,43 @@
                 <p>Front-End Developer</p>
                 <p>Security Enthusiast</p>
             </div><br>
-            <h2><span id="greetingText">Stay cyber safe</span></h2>
+            <h2><span id="greetingText">Stay safe from cyber threats</span></h2>
 
-            <script style="max-width: 50%; max-height: 50%; ">
+            <script>
                 const greetings = [
-                    'സൈബർ ഭീഷണികളിൽ നിന്ന് സുരക്ഷിതരായിരിക്കുക', 'साइबर से सुरक्षित रहें', 'সাইবার থেকে নিরাপদ থাকুন', 'サイバーから安全に過ごしてください', 'Restez en sécurité contre le cyber', 'Mantente seguro del ciber', '保持网络安全', 'Bleib sicher vor Cybergefahren', 'சைபர் ஆபத்திலிருந்து பாதுகாப்பாக இருங்கள்', 'Fanacht sábháilte ón gcibear', 'Manténgase seguro del ciber', 'Bleiben Sie sicher vor Cyber', 'Stai al sicuro dal cyber', 'שמור על עצמך בטוח מפני סייבר', 'Оставайтесь в безопасности от киберугроз', 'ابق آمناً من الخطر السيبراني', 'Hãy an toàn khỏi mối đe dọa mạng'];
-                let index = 0;
+                    'Stay Safe From Cyber Threats', // English    
+                    'साइबर धोखाधड़ी से सुरक्षित रहें', // Hindi
+                    'সাইবার ধর্মঘটে থেকে নিরাপদ থাকুন', // Bengali
+                    'サイバー脅威から安全に過ごしてください', // Japanese
+                    'بقاء آمنًا من التهديدات السيبرانية', // Arabic
+                    '远离网络威胁，保持安全', // Chinese
+                    'Bleiben Sie vor Cyberbedrohungen sicher', // German
+                    'Оставайтесь в безопасности от киберугроз', // Russian
+                    'Bleiben Sie sicher vor Cyberbedrohungen', // German
+                    'Stai al sicuro dalle minacce informatiche', // Italian
+                    'சைபர் பாதிக்குரிய பாதுகாப்பாக இருங்கள்', // Tamil
+                    'Fanacht sábháilte ón ngáthghabháil dhigiteach', // Irish
+                    'Manténgase a salvo de las amenazas cibernéticas', // Spanish
+                    'Restez en sécurité contre les menaces cybernétiques', // French
+                    'സൈബർ ഭീഷണികളിൽ നിന്ന് സുരക്ഷിതരായിരിക്കുക', // Malayalam
+                    'Manténgase seguro de las amenazas cibernéticas', // Spanish (Latin America)
+                    'Giữ an toàn khỏi mối đe dọa mạng cyber',// Vietnamese
+                    'נשארו בטוחים מאיומים סייבר', // Hebrew
+
+                ];
+
+                let maxTextLength = 0;
+
+                // Find the length of the longest greeting
+                greetings.forEach(greeting => {
+                    if (greeting.length > maxTextLength) {
+                        maxTextLength = greeting.length;
+                    }
+                });
+
+                const containerWidth = 300; // Adjust this according to your container width
+                const defaultFontSize = 74;
+                const scaleFactor = containerWidth / (maxTextLength * 15); // Adjust the divisor based on your container and font-family
 
                 function changeGreeting() {
                     const greetingTextElement = document.getElementById('greetingText');
@@ -74,16 +105,20 @@
 
                     setTimeout(() => {
                         greetingTextElement.innerHTML = greetings[index]; // Update greeting content
+                        greetingTextElement.style.fontSize = (defaultFontSize * scaleFactor) + 'px'; // Adjust font size based on the scale factor
                         greetingTextElement.style.opacity = 1; // Fade in
                         index = (index + 1) % greetings.length;
                     }, 500); // Wait for fade out before updating greeting content
                 }
 
-                setInterval(changeGreeting, 5000); // 2 seconds interval (including fade in/out time)
+                let index = 0;
+                changeGreeting(); // Initialize with the first greeting
+                setInterval(changeGreeting, 4000); // 5 seconds interval (including fade in/out time)
             </script>
 
+
             <div class="body-title">
-               
+
                 <h1>Cybersecurity Guardian<br>Front-End Maestro</h1>
                 <p>Crafting a Secure and User-Centric Digital Tomorrow</p>
                 <a href="https://www.linkedin.com/in/rafi-geek/">LET'S Connect!</a>
@@ -124,9 +159,10 @@
         </div>
         <div class="body-part-1">
             <div class="body-title">
-               
+
                 <h1>Who Am I?</h1>
-                <p>Muhammed Rafi here, an Indian Cybersecurity enthusiast, passionate about programming and cybersecurity.<br>
+                <p>Muhammed Rafi here, an Indian Cybersecurity enthusiast, passionate about programming and
+                    cybersecurity.<br>
                     Completed Diploma in Computer Engineering at GPTC Meppadi Kerala, India.<br>
                     Started with a Java Programming Internship, honed skills, and fell in love with web development
                     using HTML, CSS, and JS.<br>
@@ -311,7 +347,7 @@
         <div class="footer-right">
             <div class="footer-email-intro">
                 <p>Information</p>
-                <h6>Kerala, India </h6>
+                <h6>Wayanad, Kerala, India </h6>
                 <h3>inboundtorafi@gmail.com</h3>
             </div>
             <div class="footer-nav-menu">

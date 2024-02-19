@@ -3,6 +3,7 @@
 /* ---------- GLOBAL STYLING ---------- */
 body {
   overflow-x: hidden;
+  width: fixed;
 }
 
 * {
