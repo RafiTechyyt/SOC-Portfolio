@@ -18,14 +18,14 @@ design_card_butttons.forEach((button, index) => {
                 btn.classList.add('active');
             } else {
                 btn.classList.remove('active');
-                
+
             }
         });
     });
 });
 
 single_profile_card.forEach((btn, index) => {
-    btn.addEventListener('click', ()=> {
+    btn.addEventListener('click', () => {
         testimonial_card.forEach((testimonialCard, testimonialCardIndex) => {
             if (index === testimonialCardIndex) {
                 testimonialCard.style.display = 'block';
