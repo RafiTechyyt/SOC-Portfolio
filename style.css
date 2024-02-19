@@ -92,7 +92,7 @@ body::selection {
 }
 
 ::-webkit-scrollbar{
-  width: 10px;
+  width: 2px;
 }
 
 ::-webkit-scrollbar-track{
@@ -233,6 +233,7 @@ body::selection {
   padding: 100px 0 0 100px;
   margin-bottom: 10vh;
   max-height: 100vh;
+  
 }
 #aboutme{
   display: flex;
@@ -473,16 +474,18 @@ body::selection {
 #footer {
   display: flex;
   flex-direction: row;
-  padding: 100px;
+  padding: 1px;
   background-color: #2d2e3273;
   height: 100vh;
+  
 }
 
 .footer-left {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-left: 50%;
 }
 
 .footer-left h2 {
@@ -502,6 +505,7 @@ body::selection {
   width: 80%;
   justify-content: space-between;
   border-radius: 10px;
+  
   padding: 60px 25% 40px 20px;
   border: 1px solid #2d2e3240;
   background-color: #2d2e3273;
@@ -566,16 +570,19 @@ body::selection {
 .footer-right {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 185px 0 15px 0;
+  
+  padding: 15px 0 15px 0;
+  margin-left: 5%;
+  
 }
+
 
 .footer-email-intro {
   display: flex;
   flex-direction: column;
 }
 
-.footer-email-intro p {
+.footer-email-intro p,h3 {
   font-size: 12px;
   color: #7c7d81;
   font-weight: 600;
@@ -595,6 +602,10 @@ body::selection {
   margin: 10px 0;
 }
 
+.foot-left{
+  padding:auto;
+  margin-left: 10px;
+}
 .footer-menu {
   display: flex;
   flex-direction: column;
@@ -604,7 +615,7 @@ body::selection {
 .footer-menu li {
   list-style: none;
   padding: 0 20px;
-  position: relative;
+  
   margin: 5px 0;
 }
 
@@ -662,7 +673,4 @@ body::selection {
 .social-icons a:nth-child(6) i:hover {
   color: #3b5998;
 }
-::-webkit-scrollbar 
-{
-  disable-scrollbar;
-}
+
