@@ -3,7 +3,7 @@
 /* ---------- GLOBAL STYLING ---------- */
 body {
   overflow-x: hidden;
-  width: fixed;
+  
 }
 
 * {
@@ -16,6 +16,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  
 }
 
 h1 {
